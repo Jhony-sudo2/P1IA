@@ -2,18 +2,19 @@ package com.ia.data;
 
 public class Curso {
     private String nombre;
-    private String codigo;
+    private int codigo;
     private String carrera;
     private int semestre;
     private boolean tipo;
-
+    private String seccion;
     
 
-    public Curso(String nombre, String codigo, String carrera, int semestre, boolean tipo) {
+    public Curso(String nombre, int codigo, String carrera, int semestre, boolean tipo,String seccion) {
         this.nombre = nombre;
         this.codigo = codigo;
         this.carrera = carrera;
         this.semestre = semestre;
+        this.seccion = seccion;
         this.tipo = tipo;
     }
     public String getNombre() {
@@ -22,10 +23,10 @@ public class Curso {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    public String getCodigo() {
+    public int getCodigo() {
         return codigo;
     }
-    public void setCodigo(String codigo) {
+    public void setCodigo(int codigo) {
         this.codigo = codigo;
     }
     public String getCarrera() {
@@ -40,11 +41,17 @@ public class Curso {
     public void setSemestre(int semestre) {
         this.semestre = semestre;
     }
-    public boolean isTipo() {
+    public boolean getTipo() {
         return tipo;
     }
     public void setTipo(boolean tipo) {
         this.tipo = tipo;
+    }
+    public String getSeccion() {
+        return seccion;
+    }
+    public void setSeccion(String seccion) {
+        this.seccion = seccion;
     }
 
     

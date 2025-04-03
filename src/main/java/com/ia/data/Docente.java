@@ -1,16 +1,17 @@
 package com.ia.data;
 
-import java.util.Date;
+import java.time.LocalTime;
 
 public class Docente {
     private String nombre;
     private Long registroPersonal;
-    private Date horaEntrada;
-    private Date horaSalida;
+    private LocalTime horaEntrada;
+    private LocalTime horaSalida;
 
     
 
-    public Docente(String nombre, Long registroPersonal, Date horaEntrada, Date horaSalida) {
+    
+    public Docente(String nombre, Long registroPersonal, LocalTime horaEntrada, LocalTime horaSalida) {
         this.nombre = nombre;
         this.registroPersonal = registroPersonal;
         this.horaEntrada = horaEntrada;
@@ -28,18 +29,19 @@ public class Docente {
     public void setRegistroPersonal(Long registroPersonal) {
         this.registroPersonal = registroPersonal;
     }
-    public Date getHoraEntrada() {
+    public LocalTime getHoraEntrada() {
         return horaEntrada;
     }
-    public void setHoraEntrada(Date horaEntrada) {
+    public void setHoraEntrada(LocalTime horaEntrada) {
         this.horaEntrada = horaEntrada;
     }
-    public Date getHoraSalida() {
+    public LocalTime getHoraSalida() {
         return horaSalida;
     }
-    public void setHoraSalida(Date horaSalida) {
+    public void setHoraSalida(LocalTime horaSalida) {
         this.horaSalida = horaSalida;
     }
+    
 
     
 
